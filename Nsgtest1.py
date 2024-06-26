@@ -107,8 +107,7 @@ def ingest_to_logscale(records):
     try:
         logscale_token = os.environ.get("LogScaleIngestToken")
         response = requests.post(
-            url=os.environ.get("LogScaleHostURL").rstrip(
-                '/')+"/api/v1/ingest/hec",
+            url=os.environ.get("LogScaleHostURL"),
             headers={
                 "Authorization": f"Bearer {logscale_token}",
                 "Content-Type": "application/json",
