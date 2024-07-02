@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "LOGSCALE_URL": "your-logscale-url",
+    "LOGSCALE_BEARER_TOKEN": "your-logscale-bearer-token"
+  }
+}
