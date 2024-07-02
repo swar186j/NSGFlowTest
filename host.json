@@ -1,0 +1,10 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "blobs": {
+      "maxDegreeOfParallelism": -1,
+      "maxOutstandingRequests": 128,
+      "maxConcurrency": 16
+    }
+  }
+}
