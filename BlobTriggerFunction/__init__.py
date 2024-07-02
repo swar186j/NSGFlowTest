@@ -22,7 +22,7 @@ def main(myblob: func.InputStream, context: func.Context) -> func.HttpResponse:
     # Connect to Azure Blob Storage using DefaultAzureCredential
     try:
         blob_service_client = BlobServiceClient.from_connection_string(os.environ["AzureWebJobsStorage"])
-        container_client = blob_service_client.get_container_client("your-container-name")  # Replace with your container name
+        container_client = blob_service_client.get_container_client("insights-logs-networksecuritygroupflowevent")  # Replace with your container name
     except Exception as e:
         logging.error(f"Error connecting to Azure Blob Storage: {e}")
         return func.HttpResponse(
